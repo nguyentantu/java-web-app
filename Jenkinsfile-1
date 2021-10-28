@@ -2,9 +2,11 @@
 pipeline {
   agent any
   stages {
-    stage('Scan') {
+    stage('Scan Sonarqube') {
       steps {
-        helloWorld()
+        helloWorld(
+          deploy: true
+        )
       }
     }
   }
