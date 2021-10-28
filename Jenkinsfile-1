@@ -5,7 +5,7 @@ pipeline {
     stage('Scan Sonarqube') {
       steps {
         helloWorld(
-          deploy: false
+          deploy: true
         )
       }
     }
